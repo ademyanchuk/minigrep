@@ -13,7 +13,7 @@ impl Config {
         args.next();
         let query = match args.next() {
             Some(arg) => arg,
-            None => return Err("Didn't get a query string"),
+            None => return Err("Didn't get a query string.."),
         };
         let filename = match args.next() {
             Some(arg) => arg,
